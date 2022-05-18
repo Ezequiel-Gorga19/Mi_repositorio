@@ -89,3 +89,15 @@ h2 {
     font-size: 35px;
     color: aliceblue;
 }
+header {
+    transition: 2s;
+}
+header:hover {
+    transform: skewY(15deg);
+}
+ul{
+    transition: 2s;
+}
+ul:hover{  
+    transform: translate(0px, 10px);
+}
