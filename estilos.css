@@ -40,6 +40,9 @@ font-size: 18px;
 text-align: center;
 color: black;
 }
+nav ul li a:hover {
+    color: blueviolet;
+}
 header{
     grid-area: menu;
     text-align: center;
@@ -67,8 +70,7 @@ main {
 }
 footer {
     grid-area: pie;
-    display: flex;
-    text-align: center;
+    padding: 4px;
 }
 /* medidas tablet */
 @media (min-width: 768px) {
@@ -83,9 +85,10 @@ footer {
 } 
 }
 .comida { 
-    border: 3px solid rebeccapurple;
+    border: 3px solid ;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 h2 {
     display: flex;
@@ -102,6 +105,13 @@ header:hover {
 ul{
     transition: 2s;
 }
-ul:hover{  
+ul:hover {  
     transform: translate(0px, 10px);
 }
+
+
+
+
+
+
+
