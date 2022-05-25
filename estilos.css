@@ -2,19 +2,17 @@
     background-color: rgb(229, 199, 252);
 }
 
-#pantalla {
-    display: grid;
-grid-template-areas:
- "navegacion" "navegacion"
- "menu" "menu"
- "principal" "principal"
- "pie" "pie"
- ;
- grid-template-columns: 100% 100%;
- grid-template-rows:100px 100px minmax(200px, 100px) ;
- max-width: 1000px;
- width: 80%;
- margin: auto;
+div {
+display: grid;
+grid-template-areas: 
+"navegacion navegacion"
+"menu menu"
+"seccion1 lateral"
+"pie pie";
+grid-template-columns: 1fr 1fr;
+grid-template-rows: repeat(2, 100px);
+
+
 }
 
 nav {
@@ -49,28 +47,38 @@ header{
     color: rgb(240, 240, 240);
 }
 main {
-    display: grid;
-    grid-area: principal;
-    grid-template-rows: 1fr;
+    
     padding: 15px;
-    border: 3px solid rgb(250, 173, 250);
+    border: 1 solid black;
     margin: auto;
 }
-
+.titulo1 {
+    text-align: center;
+}
+.titulo2 {
+    text-align: center;
+}
 #sobreNosotros {
-    display: grid;
+   grid-area: seccion1;
+   text-align: center;
 }
 #DondeEstamos{
-    display: grid;
+   grid-area: lateral;
+   text-align: center;
 }
 /* la imagen es ejemplo de ubicacion en mapa */
-#ubicacion img {
+img {
     max-width: 100%;
     height: auto;
 }
 footer {
     grid-area: pie;
     padding: 4px;
+    text-align: center;
+    font-size: 25px;
+}
+footer:hover {
+    color: blueviolet;
 }
 /* medidas tablet */
 @media (min-width: 768px) {
@@ -84,11 +92,36 @@ footer {
         grid-template-columns: repeat(4, 50%)
 } 
 }
+.cosas-ricas {
+    font-size: 30px;
+    color: azure;
+    padding: 2px;
+    text-decoration: underline;
+}
 .comida { 
-    border: 3px solid ;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin: auto;
+    border: 1px solid rgb(152, 152, 152);
+}
 
+
+#hamburguesa {
+    list-style: none;
+    padding-bottom: 20px;
+    border-bottom: 1px solid ;
+
+}
+#milanesas {
+    list-style: none;
+    padding-bottom: 20px;
+    border-bottom: 1px solid ;
+}
+#pastas {
+    list-style: none;
+    padding-bottom: 20px;
+    
 }
 h2 {
     display: flex;
@@ -102,16 +135,51 @@ header {
 header:hover {
     transform: translate(0px, 10px);
 }
-ul{
+.nav-index {
     transition: 2s;
 }
-ul:hover {  
+.nav-index:hover {  
     transform: translate(0px, 10px);
 }
 
+#experiencias {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
 
-
-
+.carlos-p {
+    margin: 15px;
+    padding: 15px;
+}
+.carlos-p:hover {
+    color: blueviolet;
+    border: 2px solid;
+}
+.mabel-p {
+    margin: 15px;
+    padding: 15px;
+}
+.mabel-p:hover { 
+    color: blueviolet;
+    border: 2px solid;
+}
+.erica-p {
+    margin: 15px;
+    padding: 15px;
+}
+.erica-p:hover { 
+    color: blueviolet;
+    border: 2px solid;
+}
+.augusto-p {
+    margin: 15px;
+    padding: 15px;
+}
+.augusto-p:hover { 
+    color: blueviolet;
+    border: 2px solid;
+}
 
 
 
