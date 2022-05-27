@@ -1,31 +1,33 @@
 /* line 1, ../../../Desktop/Curso/scss/estilos.scss */
 * {
-  background-color: #e5c7fc; }
+  background-color: #e5c7fc;
+}
 
 /* line 5, ../../../Desktop/Curso/scss/estilos.scss */
 div {
   display: grid;
-  grid-template-areas: "navegacion navegacion"
- "menu menu"
- "seccion1 lateral"
- "pie pie";
+  grid-template-areas: "navegacion navegacion" "menu menu" "seccion1 lateral" "pie pie";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 100px); }
+  grid-template-rows: repeat(2, 100px);
+}
 
 /* line 18, ../../../Desktop/Curso/scss/estilos.scss */
 nav {
-  grid-area: navegacion; }
+  grid-area: navegacion;
+}
 
 /* line 21, ../../../Desktop/Curso/scss/estilos.scss */
 nav ul {
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 /* line 27, ../../../Desktop/Curso/scss/estilos.scss */
 nav ul li {
-  flex-grow: 1; }
+  flex-grow: 1;
+}
 
 /* line 30, ../../../Desktop/Curso/scss/estilos.scss */
 nav ul li a {
@@ -36,77 +38,93 @@ nav ul li a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   text-align: center;
-  color: black; }
+  color: black;
+}
 
 /* line 41, ../../../Desktop/Curso/scss/estilos.scss */
 nav ul li a:hover {
-  color: blueviolet; }
+  color: blueviolet;
+}
 
 /* line 44, ../../../Desktop/Curso/scss/estilos.scss */
 header {
   grid-area: menu;
   text-align: center;
-  color: #f0f0f0; }
+  color: #f0f0f0;
+}
 
 /* line 49, ../../../Desktop/Curso/scss/estilos.scss */
 main {
   padding: 15px;
   border: 1 solid black;
-  margin: auto; }
+  margin: auto;
+}
 
 /* line 55, ../../../Desktop/Curso/scss/estilos.scss */
 .titulo1 {
-  text-align: center; }
+  text-align: center;
+}
 
 /* line 58, ../../../Desktop/Curso/scss/estilos.scss */
 .titulo2 {
-  text-align: center; }
+  text-align: center;
+}
 
 /* line 61, ../../../Desktop/Curso/scss/estilos.scss */
 #sobreNosotros {
   grid-area: seccion1;
-  text-align: center; }
+  text-align: center;
+}
 
 /* line 65, ../../../Desktop/Curso/scss/estilos.scss */
 #DondeEstamos {
   grid-area: lateral;
-  text-align: center; }
+  text-align: center;
+}
 
 /* la imagen es ejemplo de ubicacion en mapa */
 /* line 70, ../../../Desktop/Curso/scss/estilos.scss */
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 /* line 74, ../../../Desktop/Curso/scss/estilos.scss */
 footer {
   grid-area: pie;
   padding: 4px;
   text-align: center;
-  font-size: 25px; }
+  font-size: 25px;
+}
 
 /* line 80, ../../../Desktop/Curso/scss/estilos.scss */
 footer:hover {
-  color: blueviolet; }
+  color: blueviolet;
+}
 
 /* medidas tablet */
 @media (min-width: 768px) {
   /* line 85, ../../../Desktop/Curso/scss/estilos.scss */
   #pantalla {
-    grid-template-columns: repeat(2, 100%); } }
+    grid-template-columns: repeat(2, 100%);
+  }
+}
 
 /* Computadoras */
 @media (min-width: 1200px) {
   /* line 91, ../../../Desktop/Curso/scss/estilos.scss */
   #pantalla {
-    grid-template-columns: repeat(4, 50%); } }
+    grid-template-columns: repeat(4, 50%);
+  }
+}
 
 /* line 95, ../../../Desktop/Curso/scss/estilos.scss */
 .cosas-ricas {
   font-size: 30px;
   color: azure;
   padding: 2px;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 /* line 101, ../../../Desktop/Curso/scss/estilos.scss */
 .comida {
@@ -114,92 +132,110 @@ footer:hover {
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
   margin: auto;
-  border: 1px solid #989898; }
+  border: 1px solid #989898;
+}
 
 /* line 110, ../../../Desktop/Curso/scss/estilos.scss */
 #hamburguesa {
   list-style: none;
   padding-bottom: 20px;
-  border-bottom: 1px solid; }
+  border-bottom: 1px solid;
+}
 
 /* line 116, ../../../Desktop/Curso/scss/estilos.scss */
 #milanesas {
   list-style: none;
   padding-bottom: 20px;
-  border-bottom: 1px solid; }
+  border-bottom: 1px solid;
+}
 
 /* line 121, ../../../Desktop/Curso/scss/estilos.scss */
 #pastas {
   list-style: none;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
 /* line 126, ../../../Desktop/Curso/scss/estilos.scss */
 h2 {
   display: flex;
   text-align: center;
   font-size: 35px;
-  color: aliceblue; }
+  color: aliceblue;
+}
 
 /* line 132, ../../../Desktop/Curso/scss/estilos.scss */
 header {
-  transition: 2s; }
+  transition: 2s;
+}
 
 /* line 135, ../../../Desktop/Curso/scss/estilos.scss */
 header:hover {
-  transform: translate(0px, 10px); }
+  transform: translate(0px, 10px);
+}
 
 /* line 138, ../../../Desktop/Curso/scss/estilos.scss */
 .nav-index {
-  transition: 2s; }
+  transition: 2s;
+}
 
 /* line 141, ../../../Desktop/Curso/scss/estilos.scss */
 .nav-index:hover {
-  transform: translate(0px, 10px); }
+  transform: translate(0px, 10px);
+}
 
 /* line 145, ../../../Desktop/Curso/scss/estilos.scss */
 #experiencias {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px; }
+  font-size: 24px;
+}
 
 /* line 151, ../../../Desktop/Curso/scss/estilos.scss */
 .carlos-p {
   margin: 15px;
-  padding: 15px; }
+  padding: 15px;
+}
 
 /* line 155, ../../../Desktop/Curso/scss/estilos.scss */
 .carlos-p:hover {
   color: blueviolet;
-  border: 2px solid; }
+  border: 2px solid;
+}
 
 /* line 159, ../../../Desktop/Curso/scss/estilos.scss */
 .mabel-p {
   margin: 15px;
-  padding: 15px; }
+  padding: 15px;
+}
 
 /* line 163, ../../../Desktop/Curso/scss/estilos.scss */
 .mabel-p:hover {
   color: blueviolet;
-  border: 2px solid; }
+  border: 2px solid;
+}
 
 /* line 167, ../../../Desktop/Curso/scss/estilos.scss */
 .erica-p {
   margin: 15px;
-  padding: 15px; }
+  padding: 15px;
+}
 
 /* line 171, ../../../Desktop/Curso/scss/estilos.scss */
 .erica-p:hover {
   color: blueviolet;
-  border: 2px solid; }
+  border: 2px solid;
+}
 
 /* line 175, ../../../Desktop/Curso/scss/estilos.scss */
 .augusto-p {
   margin: 15px;
-  padding: 15px; }
+  padding: 15px;
+}
 
 /* line 179, ../../../Desktop/Curso/scss/estilos.scss */
 .augusto-p:hover {
   color: blueviolet;
-  border: 2px solid; }
+  border: 2px solid;
+}
 
 /*# sourceMappingURL=estilos.css.map */
