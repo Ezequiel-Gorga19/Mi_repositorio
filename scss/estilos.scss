@@ -180,3 +180,18 @@ header:hover {
     color: blueviolet;
     border: 2px solid;
 }
+$redes: (
+    twitter: rgb(129, 224, 255),
+    instagram: rgb(255, 50, 228),
+    facebook: rgb(0, 0, 210),
+);
+$borde: solid 1px black;
+$espacioInterno: 10px;
+
+@each $nombreDeRed, $color in $redes {
+.btn-#{$nombreDeRed} {
+     background-color: $color;
+     border: $borde;
+     padding: $espacioInterno;
+    }
+}
