@@ -82,7 +82,6 @@ img {
 footer {
   grid-area: pie;
   padding: 4px;
-  text-align: center;
   font-size: 25px; }
 
 /* line 80, ../../../Desktop/Curso/scss/estilos.scss */
