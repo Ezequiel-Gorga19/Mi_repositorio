@@ -85,8 +85,6 @@ footer {
   font-size: 25px; }
 
 /* line 80, ../../../Desktop/Curso/scss/estilos.scss */
-footer:hover {
-  color: blueviolet; }
 
 /* medidas tablet */
 @media (min-width: 768px) {
